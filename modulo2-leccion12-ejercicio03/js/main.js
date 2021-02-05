@@ -2,8 +2,8 @@
 
 const arr = [
   { nombre: "Jech", apellidos: "Fernández", telefono: "666464666" },
-  { nombre: "Laura", apellidos: "Ansótegui", telefono: "666123456" },
-  { nombre: "Estonia", apellidos: "Larrañaga", telefono: "602758666"}
+  { nombre: "Susana", apellidos: "Taranco", telefono: "666123456" },
+  { nombre: "Caro", apellidos: "Castaño", telefono: "602758666"}
 ];
 
 const inputName = document.querySelector(".name");
@@ -13,7 +13,7 @@ const select = document.querySelector(".select");
 
 function fillForm() {
   event.preventDefault();
-    for (let i = 0; i < arr.length; i = i + 1) {
+    for (let i = 0; i < arr.length; i++) {
       if (arr[i].nombre === select.value) {
       inputName.value = arr[i].nombre;
       inputSurname.value = arr[i].apellidos;
